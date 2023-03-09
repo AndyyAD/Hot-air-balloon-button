@@ -38,8 +38,8 @@ body{
 }
 
 .btn{
-    padding: 2rem 7.8rem 2rem 3.6rem;
-    border-radius: 3rem;
+    padding: 2rem 8rem 2rem 3.2rem;
+    border-radius: 4rem;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 800;
     font-size: 2rem;
@@ -52,11 +52,48 @@ body{
     border-radius: 4rem;
     width: 4.7rem;
     position: absolute;
-    left: 59%;
-    top: 14%;
+    left: 58%;
+    top: 15%;
 }
 
 .btn:hover{
     background-color: var(--tertiary);
     transition: all .2s;
+}
+
+.loon-out{
+    transform: translateX(10rem);
+    width: 7rem;
+    transition: transform .1s ease-out;
+    transition: width 2s;
+}
+
+.hide{
+    display: none;
+}
+
+.loon-anime{
+    animation: loon-rise 5s linear;
+}
+
+@keyframes loon-rise {
+    0%{
+        transform: translate(0, 0);
+    }
+    10%{
+        transform: translate(10rem, 0);
+        top: 13%;
+    }
+    25%{
+        width: 7rem;
+        top: 13%;
+    }
+    50%{
+        transform: translate(10rem, 0);
+        width: 7rem;
+    }
+    100% {
+        transform: translate(10rem, -42rem);
+        width: 7rem;
+    }
 }
