@@ -11,11 +11,18 @@ html{
 }
 
 :root{
-    --primary: #DEFCF9;
-    --peacock-body: #060047;
+    --background: #DEFCF9;
+    --text-color: #333333;
+    --btn-main: #F3D7CA;
+    --btn-hover: #00B2FF;
+    --cloud: #787878;
+    --peacock-body1: #060047;
+    --peacock-body2: #DBDBDB;
+    --peacock-feather: #50CB86;
+    --peacock-feather-circle1: #FFE263;
+    --peacock-feather-circle2: #195DA9;
     --peacock-beak1: #F99417;
     --peacock-beak2: #F2CD5C;
-    --peacock-feather-primary: #449187;
-    --peacock-feather1: #FFE15D;
-    --peacock-feather2: #0D4C92; 
+    --peacock-eye1: #FF0000;
+    --peacock-eye2: #ffffff;
 }
