@@ -46,6 +46,7 @@ body{
     padding: 0.8rem 2.1rem 0.8rem 6rem;
     font-size: 2.2rem;
     border: none;
+    border-radius: 0 3rem 3rem 0;
     overflow: hidden;
     background-color: var(--btn-main);
     color: var(--text-color);
@@ -156,4 +157,85 @@ body{
     border-radius: 0 2.6rem 0 0;
     position: absolute;
     bottom: 0;
+}
+
+.feather-wrap{
+    height: 15.8rem;
+    width: 15.8rem;
+    position: absolute;
+    top: 18%;
+    left: -64%;
+    z-index: -1;
+}
+
+.feather{
+    height: 15.8rem;
+    width: 15.8rem;
+    background-color: var(--peacock-feather);
+    border-radius: 50%;
+    position: relative;
+}
+
+.feather-square{
+    height: 7.9rem;
+    width: 7.9rem;
+    background-color: var(--peacock-feather);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.circle1{
+    height: 3.6rem;
+    width: 3.6rem;
+    background-color: var(--peacock-feather-circle1);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle2{
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: var(--peacock-feather-circle2);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+}
+
+.circle-3-1{
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.circle-3-2{
+    height: 1.7rem;
+    width: 1.7rem
+}
+
+.feather-circle1{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    transform: rotate(45deg);
+}
+
+.feather-circle2{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+.feather-circle3{
+    position: absolute;
+    top: 43%;
+    left: 40%;
+}
+
+.feather-circle4{
+    position: absolute;
+    top: 68%;
+    left: 28%;
+    transform: rotate(-45deg);
 }
