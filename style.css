@@ -20,11 +20,11 @@ body{
 :root{
     --background: #DEFCF9;
     --text-color: #333333;
-    --btn-main: #40E3E3;
-    --btn-hover: #00B2FF;
+    --btn-main: #4de7e7;
+    --btn-hover: #009dff;
     --cloud: #787878;
     --peacock-body1: #060047;
-    --peacock-body2: #DBDBDB;
+    --peacock-body2: #e6e6e6;
     --peacock-feather: #50CB86;
     --peacock-feather-circle1: #FFE263;
     --peacock-feather-circle2: #195DA9;
@@ -38,10 +38,12 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%, -80%);
 }
 
 .btn {
+    width: 15.7rem;
+    height: 4.8rem;
     font-family: 'Acme', sans-serif;
     padding: 0.8rem 2.1rem 0.8rem 6rem;
     font-size: 2.2rem;
@@ -50,6 +52,9 @@ body{
     overflow: hidden;
     background-color: var(--btn-main);
     color: var(--text-color);
+    position: absolute;
+    top: 110%;
+    left: 98%;
 }
 
 .btn:hover{
@@ -95,6 +100,8 @@ body{
     background-color: var(--peacock-body1);
     border-radius: 6rem 0 0 6rem;
     position: relative;
+    transform: rotate(0deg);
+    transition: transform .6s ease-in-out;
 }
 
 .head-circles{
@@ -164,8 +171,7 @@ body{
     width: 15.8rem;
     position: absolute;
     top: 18%;
-    left: -64%;
-    z-index: -1;
+    left: -165%;
 }
 
 .feather{
@@ -174,6 +180,7 @@ body{
     background-color: var(--peacock-feather);
     border-radius: 50%;
     position: relative;
+    z-index: -3;
 }
 
 .feather-square{
@@ -183,6 +190,11 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -3;
+}
+
+.circle-wrap{
+    z-index: -3;
 }
 
 .circle1{
@@ -216,15 +228,15 @@ body{
 
 .feather-circle1{
     position: absolute;
-    top: 10%;
-    left: 28%;
+    top: 11%;
+    left: 29%;
     transform: rotate(45deg);
 }
 
 .feather-circle2{
     position: absolute;
     top: 40%;
-    left: 8%;
+    left: 9%;
 }
 
 .feather-circle3{
@@ -236,6 +248,29 @@ body{
 .feather-circle4{
     position: absolute;
     top: 68%;
-    left: 28%;
+    left: 33%;
     transform: rotate(-45deg);
+}
+
+/* ---------------------- Hide effect ---------------------- */
+
+.hide{
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--background);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+    transition: transform 1.1s ease-in-out;
+}
+
+.animate-feather{
+    transform: rotate(90deg);
+}
+
+.animate-peacock-head{
+    transform: rotate(-10deg);
 }
