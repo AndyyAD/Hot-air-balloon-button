@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 *,
 *::after,
 *::before{
@@ -10,10 +12,15 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background-color: var(--background);
+    font-family: 'Acme', sans-serif;
+}
+
 :root{
     --background: #DEFCF9;
     --text-color: #333333;
-    --btn-main: #F3D7CA;
+    --btn-main: #40E3E3;
     --btn-hover: #00B2FF;
     --cloud: #787878;
     --peacock-body1: #060047;
@@ -26,3 +33,49 @@ html{
     --peacock-eye1: #FF0000;
     --peacock-eye2: #ffffff;
 }
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    font-family: 'Acme', sans-serif;
+    padding: 0.8rem 2.1rem 0.8rem 6rem;
+    font-size: 2.2rem;
+    border: none;
+    overflow: hidden;
+    background-color: var(--btn-main);
+    color: var(--text-color);
+}
+
+.btn:hover{
+    background-color: var(--btn-hover);
+    transition: all .2s ease-in-out;
+}
+
+.peacock-body{
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+}
+
+.peacock-body1{
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--peacock-body1);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.peacock-body2{
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--peacock-body2);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
